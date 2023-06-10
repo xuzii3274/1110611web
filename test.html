@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SORRY</title>
-  <style type="text/css">
-    .box{
-        width:200px;height:200px;
-        border-radius: 40%;
-        background-color: #6c757d;
-        animation: demo 10s;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        position: relative;
-    }
 
-    @keyframes demo {
-        0%{background-color: #1cabc4
-        }
-        50%{background-color: #574b79;left: 100px;
-        }
-        100%{background-color: #3e745e;bottom: -100px;left: 300px;
-        }
-    }
 
-  </style>
+
+
+<script>
+    $( document.body ).on( "click", function () {
+        if ( $( "div" ).first().is( ":hidden" ) ) {
+            $( "div" ).slideDown( "slow" );
+        } else {
+            $( "div" ).hide();
+        }
+    } );
+</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>html demo</title>
+    <style>
+        p {
+            margin: 8px;
+            font-size: 20px;
+            color: blue;
+            cursor: pointer;
+        }
+        b {
+            text-decoration: underline;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
-<div class="box">很抱歉，我們目前還沒有FB</div>
 
+<p>
+    <b>點我</b>沒有然後 <span id="tag">點啊!</span>
+</p>
+<p>
+    就...<span id="text">△點看看嘛~~△</span> 快點!
+</p>
+<p>
+    啊哈<button name="nada">是一堆沒用的</button>垃圾東西呢!
+</p>
+
+<script>
+    $( "p" ).on( "click", function() {
+        var htmlString = $( this ).html();
+        $( this ).text( htmlString );
+    });
+</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>delay demo</title>
+    <style>
+        div {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            float: left;
+        }
+        .first {
+            background-color: #3f3;
+            left: 0;
+        }
+        .second {
+            background-color: #33f;
+            left: 80px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+
+<p><button>Run</button></p>
+<div class="first"></div>
+<div class="second"></div>
+
+<script>
+    $( "button" ).on( "click", function() {
+        $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+        $( "div.second" ).slideUp( 300 ).fadeIn( 400 );
+    });
+</script>
+
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
 </body>
 </html>
