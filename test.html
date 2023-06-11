@@ -3,17 +3,14 @@
 <head>
 
 
-
-
-<script>
-    $( document.body ).on( "click", function () {
-        if ( $( "div" ).first().is( ":hidden" ) ) {
-            $( "div" ).slideDown( "slow" );
-        } else {
-            $( "div" ).hide();
-        }
-    } );
 </script>
+    Name: <input type="text" name="country-name">
+    <button class="btn">送出</button>
+    <div class="list">
+
+    </div>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -80,20 +77,41 @@
 </head>
 <body>
 
-<p><button>Run</button></p>
-<div class="first"></div>
-<div class="second"></div>
 
-<script>
-    $( "button" ).on( "click", function() {
-        $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
-        $( "div.second" ).slideUp( 300 ).fadeIn( 400 );
-    });
 </script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<button class="btn">點這之後，下面有資訊喔!</button>
+
+<ul class="info">
+
+    <li>1.名稱:00</li>
+    <p></p>
+    <li>2.地址:00</li>
+
+</ul>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
 
 
 </body>
 </html>
+
 </body>
 </html>
 </body>
