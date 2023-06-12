@@ -12,7 +12,7 @@ $(document).ready(function() {
             error: function(xhr, status, error) {
                 // 發生錯誤時的處理程式碼
                 console.log(error);      // 在控制台中顯示錯誤訊息
-                $('#dataContainer').text('發生錯誤: ' + error);
+                $('#dataContainer').text('發生錯誤:怎麼可能或錯誤，我期末要過啦! ' + error);
             }
         });
     });

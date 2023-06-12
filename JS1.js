@@ -29,7 +29,7 @@ $(document).ready(function(){
                 });
             },
             error:function(xhr){
-                alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
+                alert("發生錯誤:怎麼可能或錯誤，我期末要過啦! " + xhr.status + " " + xhr.statusText);
             }
         });
 
